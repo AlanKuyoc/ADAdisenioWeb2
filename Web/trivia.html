@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+    <link rel="stylesheet" href="./css/trivia.css">
+</head>
+
+<body>
+
+    <div class="trivia">
+
+        <h1>Trivia</h1>
+
+        <form id="formulario">
+
+            <!-- Pregunta 1 -->
+            <div class="pregunta">
+                <label for="pais">
+                    1. ¿Cuál es el país más pequeño del mundo?
+                </label>
+
+                <input type="text" id="pais">
+            </div>
+
+
+            <!-- Pregunta 2 -->
+            <div class="pregunta">
+                <label for="dias">
+                    2. ¿Cuántos días le toma a la Tierra dar una vuelta alrededor del Sol?
+                </label>
+
+                <input type="number" id="dias">
+            </div>
+
+
+            <!-- Pregunta 3 -->
+            <div class="pregunta">
+                <p>3. ¿Quién pintó la Mona Lisa?</p>
+
+                <label>
+                    <input type="radio" name="pintor" value="picasso">
+                    Pablo Picasso
+                </label>
+
+                <label>
+                    <input type="radio" name="pintor" value="da-vinci">
+                    Leonardo da Vinci
+                </label>
+
+                <label>
+                    <input type="radio" name="pintor" value="van-gogh">
+                    Vincent van Gogh
+                </label>
+            </div>
+
+
+            <!-- Pregunta 4 -->
+            <div class="pregunta">
+                <label for="matematicas">
+                    4. Resuelve: 8 + 4 × 2 - 6 ÷ 2
+                </label>
+
+                <input type="number" id="matematicas">
+            </div>
+
+
+            <!-- Pregunta 5 -->
+            <div class="pregunta">
+                <p>5. ¿Cuáles de estos son lenguajes de programación?</p>
+
+                <label>
+                    <input type="checkbox" name="lenguaje" value="javascript">
+                    JavaScript
+                </label>
+
+                <label>
+                    <input type="checkbox" name="lenguaje" value="html">
+                    HTML
+                </label>
+
+                <label>
+                    <input type="checkbox" name="lenguaje" value="cpp">
+                    C++
+                </label>
+
+                <label>
+                    <input type="checkbox" name="lenguaje" value="css">
+                    CSS
+                </label>
+            </div>
+
+
+            <button type="submit">Comprobar respuestas</button>
+
+        </form>
+
+        <p id="resultado"></p>
+
+    </div>
+
+    <script src="trivia.js"></script>
+
+    <script src="./js/validadorTrivia.js"></script>
+
+</body>
+
+</html>

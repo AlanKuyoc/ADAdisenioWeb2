@@ -1,0 +1,207 @@
+/* CONFIGURACION GENERAL */
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #fff4e6;
+
+    color: #2b1b14;
+}
+
+
+/* ENCABEZADO */
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: #a84418;
+
+    color: white;
+}
+
+.flecha {
+    align-self: flex-start;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#concepto_pagina,
+#mi_nombre {
+    margin: 5px;
+}
+
+#concepto_pagina {
+    font-size: 20px;
+}
+
+#mi_nombre {
+    font-size: 30px;
+
+    letter-spacing: 5px;
+}
+
+
+/* CONTENIDO */
+
+#yo {
+    width: 90%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 3fr;
+
+    gap: 25px;
+
+    margin: 25px auto;
+}
+
+
+/* INFORMACION PERSONAL */
+
+#respecto_a_mi {
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 2px 2px 10px lightgray;
+}
+
+
+/* FOTO */
+
+#mi_foto {
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+#mi_foto img {
+    width: 100%;
+
+    border-radius: 10px;
+}
+
+
+/* DATOS PERSONALES */
+
+#inf-basicos {
+    border-top: 4px solid #d76525;
+
+    padding-top: 15px;
+}
+
+#inf-basicos h2 {
+    color: #a84418;
+
+    margin-bottom: 15px;
+}
+
+#inf-basicos p {
+    margin: 12px 0;
+}
+
+
+/* INFORMACION DESCRIPTIVA */
+
+#info_descriptiva {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* COMO SOY */
+
+#mi_descripcion {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 2px 2px 10px lightgray;
+}
+
+#mi_descripcion h1,
+#mi_vocacion h1 {
+    color: #a84418;
+
+    margin-top: 0;
+}
+
+#mi_descripcion h2 {
+    color: #d76525;
+
+    margin-top: 20px;
+}
+
+#mi_descripcion p {
+    line-height: 1.6;
+}
+
+
+/* AFICIONES */
+
+#mi_descripcion ol {
+    line-height: 1.8;
+
+    padding-left: 25px;
+}
+
+
+/* ESTUDIOS */
+
+#mi_vocacion {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 2px 2px 10px lightgray;
+
+    border-left: 5px solid #d76525;
+}
+
+#mi_vocacion p {
+    line-height: 1.6;
+}
+
+
+/* CITA */
+
+#cita {
+    width: 90%;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #2b1b14;
+
+    color: white;
+
+    border-radius: 10px;
+}
+
+#cita h2 {
+    margin-bottom: 15px;
+}
+
+cite {
+    font-size: larger;
+
+    color: #ffd4b2;
+}

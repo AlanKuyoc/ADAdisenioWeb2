@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alan Jesus Kuyoc Itza">
+
+    <link rel="stylesheet" href="css/contactame.css">
+
+    <title>Contáctame</title>
+</head>
+
+<body>
+
+    <section class="presentacion">
+
+        <a href="index.html" class="flecha">←</a>
+
+        <h1>¡Qué bueno que andes por aquí!</h1>
+
+        <p>
+            Ahorita cuéntame un poco de ti
+            respondiendo este formulario.
+        </p>
+
+    </section>
+
+
+    <form id="formulario">
+
+        <fieldset>
+
+            <legend>¿Dígame cuál es su nombre?</legend>
+
+            <div class="nombre">
+
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido">
+                </div>
+
+            </div>
+
+        </fieldset>
+
+
+        <fieldset>
+
+            <legend>¿Qué te gusta más?</legend>
+
+            <label>
+                <input type="radio" name="animal" id="perros">
+                Perros
+            </label>
+
+            <label>
+                <input type="radio" name="animal" id="gatos">
+                Gatos
+            </label>
+
+            <label>
+                <input type="radio" name="animal" id="ninguno">
+                Ninguno de los dos
+            </label>
+
+        </fieldset>
+
+
+        <fieldset>
+
+            <legend>¿Qué te gusta hacer?</legend>
+
+            <label>
+                <input type="checkbox" name="actividad" id="videojuegos">
+                Jugar videojuegos
+            </label>
+
+            <label>
+                <input type="checkbox" name="actividad" id="programar">
+                Programar
+            </label>
+
+            <label>
+                <input type="checkbox" name="actividad" id="platicar">
+                Platicar
+            </label>
+
+            <label>
+                <input type="checkbox" name="actividad" id="series">
+                Ver series o películas
+            </label>
+
+            <label>
+                <input type="checkbox" name="actividad" id="escritos">
+                Hacer escritos
+            </label>
+
+            <label>
+                <input type="checkbox" name="actividad" id="imaginacion">
+                Dejar volar tu imaginación
+            </label>
+
+            <label>
+                <input type="checkbox" name="actividad" id="manualidades">
+                Manualidades
+            </label>
+
+        </fieldset>
+
+
+        <fieldset>
+
+            <legend>¿Cómo preparas el cereal con leche?</legend>
+
+            <select name="cereal" id="cereal">
+
+                <option>
+                    Primero cereal, después leche
+                </option>
+
+                <option>
+                    Primero leche, después cereal
+                </option>
+
+                <option>
+                    No me gusta el cereal con leche
+                </option>
+
+            </select>
+
+        </fieldset>
+
+
+        <input class="boton" type="submit" value="Enviar">
+
+    </form>
+
+    <script src="./js/validacionesContactame.js"></script>
+
+</body>
+
+</html>

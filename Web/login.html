@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - AlanK</title>
+
+    <link rel="stylesheet" href="./css/autenticacion.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <h1 class="logo">AlanK</h1>
+
+        <nav class="navegacion">
+            <a href="./registro.html">Crear cuenta</a>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="formulario">
+
+            <h2>Iniciar sesión</h2>
+
+            <p>Bienvenido nuevamente a mi página.</p>
+
+            <form action="./php/login.php" method="POST">
+
+                <label for="nombre">Nombre de usuario:</label>
+
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="contraseña">Contraseña:</label>
+
+                <input type="password" id="contraseña" name="contraseña" required>
+
+                <button type="submit">Entrar</button>
+
+            </form>
+
+            <p class="enlace">
+                ¿No tienes una cuenta?
+                <a href="./registro.html">Regístrate aquí</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <script>
+        const parametros = new URLSearchParams(window.location.search);
+
+        if (parametros.has("estado")) {
+
+            if (parametros.get("estado") === "error") {
+                alert("Login no exitoso. Nombre o contraseña incorrectos.");
+            }
+
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+    </script>
+
+</body>
+
+</html>

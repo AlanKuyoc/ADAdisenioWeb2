@@ -1,0 +1,237 @@
+/* CONFIGURACION GENERAL */
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #fff4e6;
+
+    color: #2b1b14;
+}
+
+
+/* ENCABEZADO */
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    background-color: #a84418;
+
+    color: white;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+}
+
+.encabezado h1 {
+    margin: 5px;
+}
+
+.encabezado p {
+    margin: 5px;
+}
+
+.flecha {
+    align-self: flex-start;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* AUDIO */
+
+.audio {
+    width: 80%;
+
+    margin: 20px auto;
+
+    text-align: center;
+
+    background-color: white;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    box-shadow: 2px 2px 10px lightgray;
+}
+
+.audio p {
+    color: #a84418;
+
+    font-weight: bold;
+
+    margin-top: 0;
+}
+
+
+/* TABLA */
+
+table {
+    width: 80%;
+
+    margin: auto;
+
+    border: 2px solid #a84418;
+
+    border-collapse: collapse;
+
+    background-color: white;
+
+    box-shadow: 2px 2px 10px lightgray;
+}
+
+
+caption {
+    border: 2px solid #a84418;
+
+    border-bottom: 0;
+
+    padding: 12px;
+
+    background-color: #d76525;
+
+    color: white;
+
+    font-size: 20px;
+}
+
+
+th {
+    border-bottom: 2px solid #a84418;
+
+    border-right: 1px solid #a84418;
+
+    padding: 12px;
+
+    background-color: #f5dfc8;
+
+    color: #2b1b14;
+}
+
+
+td {
+    text-align: center;
+
+    padding: 8px;
+}
+
+
+/* ENLACES */
+
+a {
+    text-decoration: none;
+
+    color: #a84418;
+
+    font-weight: bold;
+}
+
+a:hover {
+    color: #d76525;
+}
+
+
+/* IMAGENES */
+
+img {
+    width: 100px;
+
+    height: 100px;
+
+    border-radius: 50%;
+
+    border: 3px solid #d76525;
+}
+
+
+/* ENCABEZADOS DE GENERO */
+
+.cabezara-hombre {
+    border-right: 1px solid #a84418;
+
+    border-bottom: 1px solid #a84418;
+
+    background-color: #f5dfc8;
+
+    color: #a84418;
+
+    font-weight: bold;
+}
+
+
+.cabezara-mujer {
+    border-right: 1px solid #a84418;
+
+    background-color: #f5dfc8;
+
+    color: #a84418;
+
+    font-weight: bold;
+}
+
+
+/* AMIGOS */
+
+.inicio_amigo {
+    padding-top: 7px;
+}
+
+
+.fin-amigo {
+    border-bottom: 1px solid #a84418;
+
+    padding-bottom: 7px;
+}
+
+
+.columna {
+    border-right: 1px solid #a84418;
+}
+
+
+#nohay {
+    line-height: 1.5rem;
+
+    color: #777;
+}
+
+
+/* PIE DE TABLA */
+
+#footer-table {
+    border-top: 1px solid #a84418;
+
+    padding: 10px;
+
+    background-color: #f5dfc8;
+
+    color: #2b1b14;
+}
+
+
+/* VIDEO */
+
+.video {
+    width: 80%;
+
+    margin: 25px auto;
+
+    text-align: center;
+
+    background-color: white;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    box-shadow: 2px 2px 10px lightgray;
+}
+
+.video video {
+    border-radius: 8px;
+}

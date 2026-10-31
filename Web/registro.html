@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro - AlanK</title>
+
+    <link rel="stylesheet" href="./css/autenticacion.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <h1 class="logo">AlanK</h1>
+
+        <nav class="navegacion">
+            <a href="./login.html">Iniciar sesión</a>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="formulario">
+
+            <h2>Crear cuenta</h2>
+
+            <p>Regístrate para acceder a mi página.</p>
+
+            <form action="./php/registro.php" method="POST">
+
+                <label for="nombre">Nombre de usuario:</label>
+
+                <input type="text" id="nombre" name="nombre" maxlength="50" required>
+
+                <label for="contraseña">Contraseña:</label>
+
+                <input type="password" id="contraseña" name="contraseña" minlength="6" required>
+
+                <button type="submit">Registrarme</button>
+
+            </form>
+
+            <p class="enlace">
+                ¿Ya tienes una cuenta?
+                <a href="./login.html">Inicia sesión aquí</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <script>
+        const parametros = new URLSearchParams(window.location.search);
+
+        if (parametros.has("estado")) {
+
+            const estado = parametros.get("estado");
+
+            if (estado === "exitoso") {
+                alert("¡Registro exitoso! Ya puedes iniciar sesión.");
+            }
+
+            if (estado === "existente") {
+                alert("El nombre de usuario ya está registrado.");
+            }
+
+            if (estado === "error") {
+                alert("Registro no exitoso. Intenta nuevamente.");
+            }
+
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+    </script>
+
+</body>
+
+</html>
